@@ -1,0 +1,6 @@
+<ul id="list">
+  <% @articles.each do |article| %>
+      <li><%= link_to article.title, article_path(article), class: "title" %></li>
+      <li id="content">Can you believe that <%= article.content %> is linked with the club above</li>
+    <% end %>
+</ul>
